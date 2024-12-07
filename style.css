@@ -1,0 +1,106 @@
+/* Reset and Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    color: white;
+    background-image: url("portfolio_background_3.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/* Navigation Bar */
+.nav_bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+.ul_of_menu {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+}
+.li_of_menu a {
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+}
+.container_of_phone {
+    font-size: 16px;
+}
+
+/* Main Content */
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    margin: 20px;
+}
+.name {
+    font-size: 3vw;
+    margin-bottom: 20px;
+}
+.IMG {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 3px solid white;
+}
+
+/* Footer */
+.footer {
+    margin-top: 19.3%;
+    text-align: center;
+    padding: 20px 0;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+.social_links {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+.email {
+    font-size: 14px;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .nav_bar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .main .name {
+        font-size: 4vw;
+    }
+    .IMG {
+        width: 120px;
+        height: 120px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .nav_bar {
+        align-items: center;
+    }
+    .phone_number {
+        display: none;
+    }
+    .main .name {
+        font-size: 5vw;
+    }
+    .IMG {
+        width: 100px;
+        height: 100px;
+    }
+    .social_links i {
+        font-size: 28px;
+    }
+}
